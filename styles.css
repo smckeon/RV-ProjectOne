@@ -1,0 +1,124 @@
+/* BASE STYLES*/
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  box-sizing: border-box;
+}
+
+/*OUTER CONTAINER*/
+.outer-container {
+  background-color: #fff;
+  padding: 15px;
+}
+
+/*MAIN CONTAINER*/
+.main-container{
+  text-align: center;
+  padding: 100px;;
+  background-color: #E5ECEF;
+}
+
+/*QUOTE BOX*/
+.quote-box-container {
+  display: inline-flex;
+  box-shadow: 0px 20px 30px -5px rgba(0,0,0,0.75);
+}
+
+/*AUTHOR IMAGE*/
+.image-container{
+  width: 165px;
+}
+
+.author-image{
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+    background: url("./images/sheldon-coop.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.author-image:before {
+content: "";
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+background: rgba(57, 57, 57, 0.4);
+width: 100%;
+height: 100%;
+z-index: 1;
+}
+
+#quotation-image {
+  color: rgba(255, 254, 254, 0.5);
+  position: relative;
+  bottom: 90%;
+  left: 15px;
+  z-index: 0;
+}
+
+.image-container > i {
+  color: #fff;
+
+  z-index: 1;
+  position: relative;
+  bottom: 82px;
+}
+
+.prev {
+  cursor: pointer;
+  position: relative;
+  right: 4vw;
+}
+
+.next {
+  cursor: pointer;
+  position: relative;
+  left: 0vw;
+}
+
+/*QUOTE CONTAINER*/
+.quote-container {
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #18A0FF;
+  text-align: left !important;
+
+  height: 405px;
+  width: 450px;
+  padding: 10px 0px 20px 20px;
+}
+
+.quote, .quote1 {
+  width: 97%;
+  font-size: 4.75em;
+  letter-spacing: -3px;
+  margin: 5px 0px 20px 0px;
+}
+
+.quote-author {
+  margin-bottom: 20px;
+}
+
+/*LIKE COUNTER*/
+#like-counter {
+  position: relative;
+  top: 2px;
+  left: 85%;
+  color: #fff;
+  background-color: #1690E5;
+  border-radius: 100px;
+  padding: 5px 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#likes {
+    font-family: helvetica;
+    font-weight: 600;
+}
